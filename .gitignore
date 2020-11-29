@@ -1,0 +1,6 @@
+build/
+release/
+.idea/
+*.iml
+googletest-build/
+dynamic/
