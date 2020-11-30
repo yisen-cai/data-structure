@@ -1,0 +1,6 @@
+#ifndef DATA_STRUCTURE_HELLO_H
+#define DATA_STRUCTURE_HELLO_H
+
+void hello();
+
+#endif // DATA_STRUCTURE_HELLO_H

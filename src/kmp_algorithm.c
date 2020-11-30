@@ -29,7 +29,7 @@ void get_next(char *t, int *next, int len)
 /**
  * 优化过next数组求法, 去除aaaab这样出现重复next[j] = next[j]情况
  */
-void get_next_val(char *t, int *nextval, int len)
+void get_next_val(char *t, int *next, int len)
 {
     int j = 0, k = -1;
     *next = -1;

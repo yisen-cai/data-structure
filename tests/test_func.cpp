@@ -1,4 +1,4 @@
-#include "../src/func.h"
+#include "func.h"
 #include "gtest/gtest.h"
 
 TEST(TestFunc, add)

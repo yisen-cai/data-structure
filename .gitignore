@@ -4,3 +4,4 @@ release/
 *.iml
 googletest-build/
 dynamic/
+.vscode/

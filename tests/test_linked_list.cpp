@@ -1,5 +1,6 @@
-#include "../src/linked_list.h"
+#include "linked_list.h"
 #include "gtest/gtest.h"
+//#include "hello.h"
 
 TEST(TestLinkedList, insert)
 {
