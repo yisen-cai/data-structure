@@ -1,6 +1,5 @@
-#include "gtest/gtest.h"
 #include "arrays_m.h"
-
+#include "gtest/gtest.h"
 
 TEST(TestArrayM, rotateM1)
 {
@@ -48,7 +47,6 @@ TEST(TestArrayM, reverse)
     }
 }
 
-
 TEST(TestArrayM, reverseArray)
 {
     int arr[] = {1, 2, 3, 4, 5, 6, 7};
@@ -62,7 +60,6 @@ TEST(TestArrayM, reverseArray)
     }
 }
 
-
 TEST(TestArrayM, rotateM4)
 {
     int arr[] = {1, 2, 3, 4, 5, 6, 7};
@@ -73,7 +70,6 @@ TEST(TestArrayM, rotateM4)
         ASSERT_EQ(arr[i], result[i]);
     }
 }
-
 
 TEST(TESTArrayM, swapArray)
 {
@@ -93,6 +89,6 @@ TEST(TestArrayM, rotateM5)
     rotateM5(arr, 3, 7);
     for (int i = 0; i < 7; ++i)
     {
-//        ASSERT_EQ(arr[i], result[i]);
+        //        ASSERT_EQ(arr[i], result[i]);
     }
 }
