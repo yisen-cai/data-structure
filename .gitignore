@@ -5,3 +5,4 @@ release/
 googletest-build/
 dynamic/
 .vscode/
+.DS_Store

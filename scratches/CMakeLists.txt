@@ -13,6 +13,10 @@ add_library(
         src/data_types.cpp
         src/math_operations.cpp
         src/date_and_time.cpp
-        src/file_streams.h src/file_streams.cpp)
+        src/file_streams.h
+        src/file_streams.cpp
+        src/try_catch.h
+        src/try_catch.cpp
+        src/MyException.cpp src/MyException.h)
 
 target_include_directories(scratches PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

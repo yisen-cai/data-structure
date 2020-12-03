@@ -53,7 +53,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/src")
 add_executable(
         google-test-run
 
-        tests/run_tests.cpp
+        tests/test_virtual_function.cpp
         tests/test_linked_list.cpp
         tests/test_func.cpp
         tests/test_stack_stl.cpp
@@ -62,7 +62,11 @@ add_executable(
         tests/test_binary_search.cpp
         tests/test_static_box.cpp
         tests/test_virtual_function.cpp
-)
+        tests/test_example.cpp
+        tests/test_fixture.cpp
+        tests/test_try_catch.cpp
+        tests/test_exception.cpp)
+
 target_link_libraries(
         google-test-run
 
