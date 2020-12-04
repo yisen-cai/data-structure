@@ -4,10 +4,10 @@
 #include "Screen.h"
 #include "WindowManager.h"
 
-Screen::Screen(unsigned long Height, unsigned long Width, char c)
-    : height(Height), width(Width), contents(Height * Width, c)
-{
-}
+// Screen::Screen(unsigned long Height, unsigned long Width, char c)
+//    : height(Height), width(Width), contents(Height * Width, c)
+//{
+//}
 
 char Screen::get() const
 {

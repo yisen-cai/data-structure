@@ -6,3 +6,6 @@ googletest-build/
 dynamic/
 .vscode/
 .DS_Store
+.vs/
+debug.log
+
