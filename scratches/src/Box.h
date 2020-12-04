@@ -20,12 +20,12 @@ class Box
     // Constructor
     Box(double length, double breadth, double height);
 
-    Box(const Box& Box);
+    Box(const Box &Box);
 
     // destructor
     ~Box();
 
-    Box operator+(const Box& b);
+    Box operator+(const Box &b);
 
     double Volume();
 

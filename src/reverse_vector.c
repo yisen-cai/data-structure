@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "reverse_vector.h"
+#include <stdlib.h>
 
 char *reverse_vector(char *str, int len, int i)
 {

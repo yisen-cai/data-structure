@@ -1,6 +1,6 @@
 #include "binary_search_m.h"
 
-int binary_search(int* a, int size, int key)
+int binary_search(int *a, int size, int key)
 {
     int left = 0, right = size - 1;
     int index = -1;
@@ -28,7 +28,7 @@ int binary_search(int* a, int size, int key)
     return index;
 }
 
-int binary_search_recursively(int* arr, int left, int right, int key)
+int binary_search_recursively(int *arr, int left, int right, int key)
 {
     // 基线条件
     if (left > right)
@@ -50,7 +50,7 @@ int binary_search_recursively(int* arr, int left, int right, int key)
     }
 }
 
-int binary_search_in_rotate(int* arr, int left, int right, int key)
+int binary_search_in_rotate(int *arr, int left, int right, int key)
 {
     // one element last condition
     if (left == right)

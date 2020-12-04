@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include "binary_tree.h"
 #include "stack.h"
+#include <stdio.h>
 
 void pre_order_access_recursively(BTree *base)
 {
@@ -84,7 +84,7 @@ void in_thread(ThreadNode *p, ThreadNode *pre)
             p->lchild = pre;
             p->ltag = 1;
         }
-        if(pre != NULL && pre->rchild == NULL)
+        if (pre != NULL && pre->rchild == NULL)
         {
             pre->rchild = p;
             pre->rtag = 1;

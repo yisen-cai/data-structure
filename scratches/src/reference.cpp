@@ -74,7 +74,7 @@ void defineVariable()
     int c(ld), d = ld; // ok: but value will be truncated
 }
 
-void swap(int& x, int& y)
+void swap(int &x, int &y)
 {
     int temp;
     temp = x;
@@ -99,7 +99,7 @@ double vars[] = {10.1, 12.6, 33.1, 24.1, 50.0};
  * @param i
  * @return
  */
-double& setValues(int i)
+double &setValues(int i)
 {
     return vars[i];
 }
@@ -109,7 +109,7 @@ double& setValues(int i)
  * not out of scope. It is not legal to return a reference to local var.
  * @return
  */
-int& func()
+int &func()
 {
     // q;
     // return q;    // Compile time error

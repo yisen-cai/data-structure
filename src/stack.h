@@ -1,7 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
-#include <stdbool.h>
 #include "binary_tree.h"
+#include <stdbool.h>
 
 #define VALUE_TYPE BTree *
 

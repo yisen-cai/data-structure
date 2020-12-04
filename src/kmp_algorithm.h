@@ -1,7 +1,6 @@
 #ifndef KMP_ALGORITHM_H
 #define KMP_ALGORITHM_H
 
-
 void get_next(char *t, int *next, int len);
 
 void get_next_val(char *t, int *next, int len);

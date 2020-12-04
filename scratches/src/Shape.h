@@ -16,7 +16,7 @@ class Shape
     // called pure virtual function
     // it may be redefined in a derived class to suit the objects of that class
     // no need to implement
-//    virtual int area1() = 0;
+    //    virtual int area1() = 0;
 
     // using virtual make inherited class method can overwrite this parent
     virtual int area();
@@ -29,8 +29,7 @@ class Rectangle : public Shape
     int area();
 };
 
-
-class Triangle: public Shape
+class Triangle : public Shape
 {
   public:
     Triangle(int width = 0, int height = 0);

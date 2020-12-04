@@ -3,7 +3,7 @@
 
 class Node
 {
-public:
+  public:
     int data;
     Node *next;
     static void push(Node **head, int new_data);

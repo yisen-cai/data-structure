@@ -28,14 +28,14 @@ void readAndWriteFile()
     outfile.close();
 
     // open a file to read mode
-    ifstream  infile;
+    ifstream infile;
     infile.open("hello.txt");
-    cout << "Reading from the file" <<endl;
+    cout << "Reading from the file" << endl;
     infile >> data;
 
     cout << data << endl;
 
     infile >> data;
-    cout << data <<endl;
+    cout << data << endl;
     infile.close();
 }

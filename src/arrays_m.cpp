@@ -8,7 +8,7 @@
 /**
  * Very simple implement
  */
-void rotateM1(int* arr, int d, int n)
+void rotateM1(int *arr, int d, int n)
 {
     for (int i = 0; i < d; ++i)
     {
@@ -26,7 +26,7 @@ void rotateM1(int* arr, int d, int n)
     }
 }
 
-void rotateM2(int* arr, int d, int n)
+void rotateM2(int *arr, int d, int n)
 {
     // Copy to temp array
     int temp[d];
@@ -50,7 +50,7 @@ void rotateM2(int* arr, int d, int n)
     }
 }
 
-void rotateM3(int* arr, int d, int n)
+void rotateM3(int *arr, int d, int n)
 {
     // handle if d >= n
     d = d % n;
@@ -92,7 +92,7 @@ int getGCD(int a, int b)
     return getGCD(b, a % b);
 }
 
-void rotateM4(int* arr, int d, int n)
+void rotateM4(int *arr, int d, int n)
 {
     if (d == 0)
         return;
@@ -104,7 +104,7 @@ void rotateM4(int* arr, int d, int n)
     reverse(arr, 0, n);
 }
 
-void reverse(int* arr, int left, int right)
+void reverse(int *arr, int left, int right)
 {
     int mid = (left + right) / 2;
     for (int i = left; i < mid; ++i)
@@ -117,7 +117,7 @@ void reverse(int* arr, int left, int right)
 }
 
 // simpler implement
-void reverseArray(int* arr, int start, int end)
+void reverseArray(int *arr, int start, int end)
 {
     while (start < end)
     {
@@ -162,7 +162,7 @@ void rotateM5(int arr[], int d, int n)
     }
 }
 
-void swapArray(int* a1, int* a2, int size)
+void swapArray(int *a1, int *a2, int size)
 {
     for (int i = 0; i < size; ++i)
     {

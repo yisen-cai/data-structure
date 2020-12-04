@@ -3,18 +3,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-Stack* init_stack(int size)
+Stack *init_stack(int size)
 {
-    Stack* s = malloc(sizeof(Stack*));
+    Stack *s = malloc(sizeof(Stack *));
     s->size = size;
     s->top = 0;
     s->values = malloc(sizeof(VALUE_TYPE) * s->size);
     return s;
 }
 
-bool is_empty(Stack* s) { return s->top == 0; }
+bool is_empty(Stack *s)
+{
+    return s->top == 0;
+}
 
-void push(Stack* s, VALUE_TYPE value)
+void push(Stack *s, VALUE_TYPE value)
 {
     if (s->top < s->size)
     {
@@ -24,7 +27,7 @@ void push(Stack* s, VALUE_TYPE value)
     // TODO: overflow
 }
 
-VALUE_TYPE pop(Stack* s)
+VALUE_TYPE pop(Stack *s)
 {
     if (s->top >= 0)
     {

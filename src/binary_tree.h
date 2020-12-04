@@ -29,6 +29,6 @@ void post_order_access_with_loop(BTree *base);
 
 void level_order(BTree *base);
 
-void in_thread(ThreadNode* p, ThreadNode* pre);
+void in_thread(ThreadNode *p, ThreadNode *pre);
 
 #endif /* E3CEE3FC_8B28_4942_A6A1_458F045C257E */

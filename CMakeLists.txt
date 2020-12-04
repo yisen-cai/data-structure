@@ -65,7 +65,7 @@ add_executable(
         tests/test_example.cpp
         tests/test_fixture.cpp
         tests/test_try_catch.cpp
-        tests/test_exception.cpp)
+        tests/test_exception.cpp tests/test_type_conventions.cpp tests/test_liberal_class.cpp)
 
 target_link_libraries(
         google-test-run

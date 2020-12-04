@@ -10,7 +10,7 @@ TEST(TestExceptions, MyException)
     {
         throw MyException();
     }
-    catch (MyException& e)
+    catch (MyException &e)
     {
         std::cout << "MyException caught" << std::endl;
         std::cout << e.what() << std::endl;

@@ -8,7 +8,7 @@
  * @param d   number elements to be rotate
  * @param n   array size
  */
-void rotateM1(int* arr, int d, int n);
+void rotateM1(int *arr, int d, int n);
 
 /**
  * Rotate arr[] of size n by d elements
@@ -17,7 +17,7 @@ void rotateM1(int* arr, int d, int n);
  * @param d   number elements to be rotate
  * @param n   array size
  */
-void rotateM2(int* arr, int d, int n);
+void rotateM2(int *arr, int d, int n);
 
 /**
  * Rotate arr[] of size n by d elements
@@ -29,7 +29,7 @@ void rotateM2(int* arr, int d, int n);
  * @param d
  * @param n
  */
-void rotateM3(int* arr, int d, int n);
+void rotateM3(int *arr, int d, int n);
 
 /**
  * Given to number, calculate the Greatest Common Divisor of them, then return
@@ -50,7 +50,7 @@ int getGCD(int a, int b);
  * @param d
  * @param n
  */
-void rotateM4(int* arr, int d, int n);
+void rotateM4(int *arr, int d, int n);
 
 /**1, 2, 3, 4, 5, 6, 7    d=2,n=7
  * A<>Br:
@@ -100,7 +100,7 @@ void rotateM4(int* arr, int d, int n);
  */
 void rotateM5(int arr[], int d, int n);
 
-void swapArray(int* a1, int* a2, int size);
+void swapArray(int *a1, int *a2, int size);
 
 /**
  * Reverse array
@@ -108,8 +108,8 @@ void swapArray(int* a1, int* a2, int size);
  * @param left
  * @param right
  */
-void reverse(int* arr, int left, int right);
+void reverse(int *arr, int left, int right);
 
-void reverseArray(int* arr, int start, int end);
+void reverseArray(int *arr, int start, int end);
 
 #endif // DATA_STRUCTURE_ARRAYS_M_H

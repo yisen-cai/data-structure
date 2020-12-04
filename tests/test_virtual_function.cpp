@@ -6,7 +6,7 @@
 
 TEST(TestVirtualFunction, virtualFunction)
 {
-    Shape* shape;
+    Shape *shape;
     Rectangle rec(2, 3);
     Triangle tri(2, 3);
     shape = &rec;

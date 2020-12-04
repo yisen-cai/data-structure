@@ -16,7 +16,7 @@ void defineVariable();
  * @param x
  * @param y
  */
-void swap(int& x, int& y);
+void swap(int &x, int &y);
 
 /**
  * Default values in function
@@ -25,6 +25,6 @@ void swap(int& x, int& y);
  */
 int sum(int a, int b = 20);
 
-double& setValues(int i);
+double &setValues(int i);
 
 #endif // DATA_STRUCTURE_REFERENCE_H

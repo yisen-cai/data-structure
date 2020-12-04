@@ -39,7 +39,7 @@ void get_next_val(char *t, int *next, int len)
         {
             ++k;
             ++j;
-            if(*(next + j)!= *(next + k))
+            if (*(next + j) != *(next + k))
                 *(next + j) = k;
             else
                 *(next + j) = *(next + k);
@@ -87,7 +87,7 @@ int index_kmp(char *s, int s_len, char *t, int t_len, int *next)
     while (i < s_len && j < t_len)
     {
         // j = -1从头开始
-        if(j == -1 || *(s + i) == *(t + j))
+        if (j == -1 || *(s + i) == *(t + j))
         {
             i++;
             j++;
@@ -98,7 +98,7 @@ int index_kmp(char *s, int s_len, char *t, int t_len, int *next)
             j = next[j];
         }
     }
-    if(j == t_len)
+    if (j == t_len)
         return i - t_len;
     return 0;
 }

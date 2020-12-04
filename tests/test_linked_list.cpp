@@ -4,9 +4,9 @@
 
 TEST(TestLinkedList, insert)
 {
-    Node* head = nullptr;
-    Node* second = nullptr;
-    Node* third = nullptr;
+    Node *head = nullptr;
+    Node *second = nullptr;
+    Node *third = nullptr;
 
     head = new Node();
     second = new Node();
@@ -19,7 +19,7 @@ TEST(TestLinkedList, insert)
     third->data = 3;
     third->next = nullptr;
 
-    Node* node = head;
+    Node *node = head;
     for (size_t i = 0; i < 3; i++)
     {
         ASSERT_EQ(i + 1, node->data);
@@ -30,12 +30,12 @@ TEST(TestLinkedList, insert)
 
 TEST(TestLinkedList, append)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);
     }
-    Node* no = head;
+    Node *no = head;
     for (size_t i = 0; i < 10; i++)
     {
         ASSERT_EQ(i, no->data);
@@ -45,13 +45,13 @@ TEST(TestLinkedList, append)
 
 TEST(TestLinkedList, pushNode)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 20; i++)
     {
         Node::push(&head, i);
     }
 
-    Node* no = head;
+    Node *no = head;
 
     for (size_t i = 19; i >= 0 && no != nullptr; i--)
     {
@@ -62,7 +62,7 @@ TEST(TestLinkedList, pushNode)
 
 TEST(TestLinkedList, deleteNode)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);
@@ -79,7 +79,7 @@ TEST(TestLinkedList, deleteNode)
 
 TEST(TestLinkedList, deleteByPosition)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);
@@ -101,7 +101,7 @@ TEST(TestLinkedList, deleteByPosition)
 
 TEST(TestLinkedList, deleteAllNode)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 20; i++)
     {
         Node::append(&head, i);
@@ -114,7 +114,7 @@ TEST(TestLinkedList, deleteAllNode)
 
 TEST(TestLinkedList, search)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 20; i++)
     {
         Node::append(&head, i);
@@ -125,7 +125,7 @@ TEST(TestLinkedList, search)
 
 TEST(TestLinkedList, getNthNode)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 20; i++)
     {
         Node::append(&head, i);
@@ -135,7 +135,7 @@ TEST(TestLinkedList, getNthNode)
 
 TEST(TestLinkedList, reverseV1)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);
@@ -143,7 +143,7 @@ TEST(TestLinkedList, reverseV1)
     printList(head);
     Node::reverseV1(&head);
     printList(head);
-    Node* no = head;
+    Node *no = head;
     for (size_t i = 9; i >= 0 && no != nullptr; i--)
     {
         ASSERT_EQ(i, no->data);
@@ -153,13 +153,13 @@ TEST(TestLinkedList, reverseV1)
 
 TEST(TestLinkedList, reverse)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);
     }
     Node::reverseIteratively(&head);
-    Node* no = head;
+    Node *no = head;
     for (size_t i = 9; i >= 0 && no != nullptr; i--)
     {
         ASSERT_EQ(i, no->data);
@@ -169,7 +169,7 @@ TEST(TestLinkedList, reverse)
 
 TEST(TestLinkedList, reverseRecurisively)
 {
-    Node* head = nullptr;
+    Node *head = nullptr;
     for (size_t i = 0; i < 10; i++)
     {
         Node::append(&head, i);

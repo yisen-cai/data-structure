@@ -17,6 +17,13 @@ add_library(
         src/file_streams.cpp
         src/try_catch.h
         src/try_catch.cpp
-        src/MyException.cpp src/MyException.h)
+        src/MyException.cpp
+        src/MyException.h
+        src/StructClass.cpp
+        src/StructClass.h
+        src/Screen.cpp
+        src/Screen.h
+        src/WindowManager.cpp
+        src/WindowManager.h src/ConstRef.h src/Debug.cpp src/Debug.h src/Account.cpp src/Account.h)
 
 target_include_directories(scratches PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
