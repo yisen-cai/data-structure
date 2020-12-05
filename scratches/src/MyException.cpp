@@ -3,12 +3,12 @@
 //
 
 #include "MyException.h"
-const char *MyException::what() const noexcept
-{
-    return "My C++ Exception";
-}
+// const char *MyException::what() const noexcept
+//{
+//    return "My C++ Exception";
+//}
 
-const char *StructException::what() const noexcept
-{
-    return "Struct Exception";
-}
+// const char *StructException::what() const noexcept
+//{
+//    return "Struct Exception";
+//}

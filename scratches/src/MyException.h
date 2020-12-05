@@ -9,12 +9,12 @@
 class MyException : public std::exception
 {
   public:
-    const char *what() const _NOEXCEPT override;
+    // const char *what() const _NOEXCEPT override;
 };
 
 struct StructException : public std::exception
 {
-    const char *what() const _NOEXCEPT override;
+    // const char *what() const _NOEXCEPT override;
 };
 
 #endif // DATA_STRUCTURE_SCRATCHES_SRC_MYEXCEPTION_H

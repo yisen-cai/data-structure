@@ -17,7 +17,7 @@ void test()
      * ...
      */
     // set the seed
-    srand((unsigned)time(NULL));
+    // srand((unsigned)time(NULL));
 
     // generate 10 random numbers
     for (int i = 0; i < 10; ++i)
