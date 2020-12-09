@@ -8,6 +8,7 @@ googletest-src/
 dynamic/
 .vscode/
 .DS_Store
+googletest-src/
 .vs/
 debug.log
 spdlog/
