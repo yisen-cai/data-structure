@@ -9,6 +9,13 @@ set(CMAKE_CXX_STANDARD 14)
 # GTest
 ################################
 ADD_SUBDIRECTORY(googletest-src)
+
+
+################################
+# spdlog
+################################
+add_subdirectory(spdlog)
+
 #ADD_SUBDIRECTORY(dynamic)
 add_subdirectory(hello)
 add_subdirectory(scratches)
@@ -65,11 +72,16 @@ add_executable(
         tests/test_example.cpp
         tests/test_fixture.cpp
         tests/test_try_catch.cpp
-        tests/test_exception.cpp tests/test_type_conventions.cpp tests/test_liberal_class.cpp)
+        tests/test_exception.cpp 
+        tests/test_type_conventions.cpp
+        tests/test_liberal_class.cpp
+        tests/test_stack.cpp
+        tests/test_spdlog.cpp
+        )
 
 target_link_libraries(
         google-test-run
-
+        PRIVATE
         gtest
         gtest_main
         binary-search
@@ -79,6 +91,7 @@ target_link_libraries(
         linked-list
         hello-lib
         scratches
+        spdlog::spdlog
 )
 
 # Define running application
@@ -86,8 +99,22 @@ add_executable(
         data-structure
         src/main.cpp
 )
+
+# ---------------------------------------------------------------------------------------
+# Example of using pre-compiled library
+# ---------------------------------------------------------------------------------------
+# target_link_libraries(data-structure PRIVATE spdlog::spdlog)
+
+# ---------------------------------------------------------------------------------------
+# Example of using header-only library
+# ---------------------------------------------------------------------------------------
+if(SPDLOG_BUILD_EXAMPLE_HO)
+    target_link_libraries(data-structure PRIVATE spdlog::spdlog_header_only)
+endif()
+
 target_link_libraries(
-        data-structure PRIVATE
+        data-structure 
+        PRIVATE
 
         func
         linked-list
@@ -96,4 +123,5 @@ target_link_libraries(
         hello-lib
         binary-search
         scratches
+        spdlog::spdlog
 )

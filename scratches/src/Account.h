@@ -35,7 +35,6 @@ class Account
     static double initRate();
 };
 
-
 class Bar
 {
   public:

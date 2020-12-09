@@ -1,4 +1,4 @@
-//
+﻿//
 // Google test example
 //
 #include "gtest/gtest.h"

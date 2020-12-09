@@ -24,6 +24,15 @@ add_library(
         src/Screen.cpp
         src/Screen.h
         src/WindowManager.cpp
-        src/WindowManager.h src/ConstRef.h src/Debug.cpp src/Debug.h src/Account.cpp src/Account.h)
+        src/WindowManager.h 
+        src/ConstRef.h 
+        src/Debug.cpp 
+        src/Debug.h 
+        src/Account.cpp 
+        src/Account.h 
+        src/stack_class.h
+        src/stack_class.cpp
+        src/linked_list_stack.h
+)
 
 target_include_directories(scratches PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

@@ -1,4 +1,4 @@
-#include "binary_search_m.h"
+﻿#include "binary_search_m.h"
 #include "gtest/gtest.h"
 
 TEST(TestBinarySearch, binarySearchInRotate)

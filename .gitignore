@@ -1,11 +1,13 @@
 build/
+cmake-build-debug/
 release/
 .idea/
 *.iml
 googletest-build/
+googletest-src/
 dynamic/
 .vscode/
 .DS_Store
 .vs/
 debug.log
-
+spdlog/
