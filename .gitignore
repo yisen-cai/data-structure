@@ -3,12 +3,8 @@ cmake-build-debug/
 release/
 .idea/
 *.iml
-googletest-build/
-googletest-src/
 dynamic/
 .vscode/
 .DS_Store
-googletest-src/
 .vs/
 debug.log
-spdlog/

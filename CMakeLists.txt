@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 ################################
 # GTest
 ################################
-ADD_SUBDIRECTORY(googletest-src)
+ADD_SUBDIRECTORY(googletest)
 
 
 ################################
