@@ -11,8 +11,11 @@
 
 - tests: include all tests, every single test file correspond to src file, and test module name start with Test*
 
-- googletest-src: 
-  This repo using git submodule to manage its googletest dependency
+- googletest: 
+  This repo using git submodule to manage its googletest dependency.
+
+- spdlog:
+  C++ log library.
 
 - hello
 
@@ -27,7 +30,7 @@
 $ git submodule init
 $ git submodule add https://github.com/google/googletest.git googletest-src
 # cloned repo and udpate the submodule 
-$ git submodule update --init googletest-src
+$ git submodule init && git submodule update
 ~~~
 
 
@@ -42,10 +45,10 @@ $ cmake build ..
 $ make
 
 # run all tests
-$ ./Google_Tests_run
+$ ./google-test-run
 
 # run application
-$ ./data_structure
+$ ./data-structure
 ~~~
 
 
@@ -57,4 +60,13 @@ $ ./data_structure
 ~~~bash
 # generate clang-format config file, and then use clion config format
 $ clang-format -style=llvm -dump-config > .clang-format
+~~~
+
+#### Open in Visual Studio
+
+~~~powershell
+PS> mkdir build && cd build
+PS> cmake ..
+PS> explorer.exe data_structure.sln
+# then it will load all structure, if we want to see file structure in Solution Explorer, click Switch Views
 ~~~

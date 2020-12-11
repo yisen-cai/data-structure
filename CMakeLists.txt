@@ -20,7 +20,7 @@ add_subdirectory(spdlog)
 add_subdirectory(hello)
 add_subdirectory(scratches)
 
-enable_testing()
+#enable_testing()
 
 add_library(
         arrays-m
@@ -60,6 +60,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/src")
 add_executable(
         google-test-run
 
+        tests/test_main.cpp
         tests/test_virtual_function.cpp
         tests/test_linked_list.cpp
         tests/test_func.cpp
@@ -77,11 +78,14 @@ add_executable(
         tests/test_liberal_class.cpp
         tests/test_stack.cpp
         tests/test_spdlog.cpp
+        tests/test_varying_parameter.cpp
+        tests/test_functions.cpp
         )
 
 target_link_libraries(
         google-test-run
         PRIVATE
+
         gtest
         gtest_main
         binary-search
