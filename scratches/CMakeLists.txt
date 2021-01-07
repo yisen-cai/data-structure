@@ -37,6 +37,6 @@ add_library(
         src/varying_parameter.cpp
         src/functions.h
         src/functions.cpp
-  )
+        src/queues.h src/double_linked_list.h src/BTree.h)
 
 target_include_directories(scratches PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

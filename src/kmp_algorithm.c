@@ -1,5 +1,4 @@
 #include "kmp_algorithm.h"
-#include <stdlib.h>
 
 /**
  * 求next子数组

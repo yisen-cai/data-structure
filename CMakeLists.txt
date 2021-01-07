@@ -19,6 +19,7 @@ add_subdirectory(spdlog)
 #ADD_SUBDIRECTORY(dynamic)
 add_subdirectory(hello)
 add_subdirectory(scratches)
+add_subdirectory(leetcode)
 
 #enable_testing()
 
@@ -49,7 +50,7 @@ add_library(
 add_library(
         linked-list
         src/linked_list.h
-        src/linked_list.cpp
+        src/double_linked_list.cpp
 )
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
@@ -73,14 +74,14 @@ add_executable(
         tests/test_example.cpp
         tests/test_fixture.cpp
         tests/test_try_catch.cpp
-        tests/test_exception.cpp 
+        tests/test_exception.cpp
         tests/test_type_conventions.cpp
         tests/test_liberal_class.cpp
         tests/test_stack.cpp
         tests/test_spdlog.cpp
         tests/test_varying_parameter.cpp
         tests/test_functions.cpp
-        )
+        tests/test_queues.cpp tests/test_longest_sub_string.cpp tests/test_media_value.cpp)
 
 target_link_libraries(
         google-test-run
@@ -94,6 +95,7 @@ target_link_libraries(
         func
         linked-list
         hello-lib
+        leetcode-lib
         scratches
         spdlog::spdlog
 )
@@ -112,12 +114,12 @@ add_executable(
 # ---------------------------------------------------------------------------------------
 # Example of using header-only library
 # ---------------------------------------------------------------------------------------
-if(SPDLOG_BUILD_EXAMPLE_HO)
+if (SPDLOG_BUILD_EXAMPLE_HO)
     target_link_libraries(data-structure PRIVATE spdlog::spdlog_header_only)
-endif()
+endif ()
 
 target_link_libraries(
-        data-structure 
+        data-structure
         PRIVATE
 
         func

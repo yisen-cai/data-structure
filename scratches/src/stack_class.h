@@ -20,6 +20,8 @@ template <class T> class Stack
     bool isFull();
     bool isEmpty();
     void printStack();
+    void reverse();
+    void insertAtBottom(T x);
 };
 
 template <class T> Stack<T>::Stack() : top(-1), size(10)
@@ -68,6 +70,35 @@ template <class T> inline void Stack<T>::printStack()
     for (int i = size - 1; i > 0; --i)
     {
         std::cout << data[i] << "," << std::endl;
+    }
+}
+
+// double recurse
+template <class T> void Stack<T>::reverse()
+{
+    if (!isEmpty())
+    {
+        // save the temporary pop，save result to function reverse call stack
+        T x = pop();
+        reverse();
+        insertAtBottom(x);
+    }
+}
+
+// as the name, insert at bottom location
+template <class T> void Stack<T>::insertAtBottom(T x)
+{
+    if (isEmpty())
+    {
+        push(x);
+    }
+    else
+    {
+        // if stack is not empty, recursively pop all then push the first element.
+        // think about domino effect, 触到边界条件向上回溯
+        T a = pop();
+        insertAtBottom(x);
+        push(a);
     }
 }
 #endif // !STACK_CLASS_H

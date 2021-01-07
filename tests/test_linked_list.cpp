@@ -1,4 +1,5 @@
 ﻿#include "linked_list.h"
+#include "double_linked_list.h"
 #include "gtest/gtest.h"
 //#include "hello.h"
 
@@ -59,6 +60,7 @@ TEST(TestLinkedList, pushNode)
         no = no->next;
     }
 }
+
 
 TEST(TestLinkedList, deleteNode)
 {

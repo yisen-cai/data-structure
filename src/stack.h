@@ -3,7 +3,7 @@
 #include "binary_tree.h"
 #include <stdbool.h>
 
-#define VALUE_TYPE BTree *
+#define VALUE_TYPE BNode *
 
 typedef struct Stack
 {

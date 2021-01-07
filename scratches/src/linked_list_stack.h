@@ -18,7 +18,7 @@ template <class T> class LinkedListStack
 
 template <class T> inline void LinkedListStack<T>::push(T value)
 {
-    if (head == nullptr)
+    if (isEmpty())
     {
         Node<T> *new_node = new Node<T>();
         new_node->data = value;
@@ -35,7 +35,7 @@ template <class T> inline void LinkedListStack<T>::push(T value)
 
 template <class T> inline T LinkedListStack<T>::pop()
 {
-    if (head != nullptr)
+    if (!isEmpty())
     {
         T result = head->data;
         Node<T> *curr = head;
@@ -43,6 +43,10 @@ template <class T> inline T LinkedListStack<T>::pop()
         delete curr;
         return result;
     }
+}
+template <class T> bool LinkedListStack<T>::isEmpty()
+{
+    return head == nullptr;
 }
 
 template <class T> class Node

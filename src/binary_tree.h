@@ -1,10 +1,10 @@
 #ifndef E3CEE3FC_8B28_4942_A6A1_458F045C257E
 #define E3CEE3FC_8B28_4942_A6A1_458F045C257E
 
-typedef struct BTree
+typedef struct BNode
 {
-    struct BTree *lchild;
-    struct BTree *rchild;
+    struct BNode *lchild;
+    struct BNode *rchild;
     int data;
 } BTree;
 
@@ -15,19 +15,19 @@ typedef struct ThreadNode
     int ltag, rtag;
 } ThreadNode;
 
-void pre_order_access_recursively(BTree *base);
+void pre_order_access_recursively(BNode *base);
 
-void in_order_access_recursively(BTree *base);
+void in_order_access_recursively(BNode *base);
 
-void post_order_access_recursively(BTree *base);
+void post_order_access_recursively(BNode *base);
 
-void pre_order_access_with_loop(BTree *base);
+void pre_order_access_with_loop(BNode *base);
 
-void in_order_access_with_loop(BTree *base);
+void in_order_access_with_loop(BNode *base);
 
-void post_order_access_with_loop(BTree *base);
+void post_order_access_with_loop(BNode *base);
 
-void level_order(BTree *base);
+void level_order(BNode *base);
 
 void in_thread(ThreadNode *p, ThreadNode *pre);
 
