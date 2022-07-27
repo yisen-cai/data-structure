@@ -5,17 +5,14 @@
 #ifndef DATA_STRUCTURE_SCRATCHES_SRC_DOUBLE_LINKED_LIST_H
 #define DATA_STRUCTURE_SCRATCHES_SRC_DOUBLE_LINKED_LIST_H
 
-template <class T> class DoubleLinkedList
-{
-    T data;
+template <class T>
+class DoubleLinkedList {
+  T data;
 
-  public:
+ public:
 #endif
 
-    DoubleLinkedList *prev;
-    DoubleLinkedList *next;
-    DoubleLinkedList(T Data) : data(Data), prev(nullptr), next(nullptr)
-    {
-    }
-
+  DoubleLinkedList *prev;
+  DoubleLinkedList *next;
+  DoubleLinkedList(T Data) : data(Data), prev(nullptr), next(nullptr) {}
 };

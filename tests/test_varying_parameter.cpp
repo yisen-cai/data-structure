@@ -1,15 +1,13 @@
-#include "gtest/gtest.h"
-#include "varying_parameter.h"
 #include <iostream>
 
-TEST(TestVaryingParameter, passParameter)
-{
-    errorMessage({"functionX", "1", "0"});
+#include "gtest/gtest.h"
+#include "varying_parameter.h"
 
-    errorMessage({"functionX", "okay"});
-    ASSERT_FALSE(false);
+TEST(TestVaryingParameter, passParameter) {
+  errorMessage({"functionX", "1", "0"});
+
+  errorMessage({"functionX", "okay"});
+  ASSERT_FALSE(false);
 }
 
-TEST(TestVaryingParameter, passErrorCode)
-{
-}
+TEST(TestVaryingParameter, passErrorCode) {}

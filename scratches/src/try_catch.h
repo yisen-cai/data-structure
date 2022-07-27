@@ -7,4 +7,4 @@
 
 void oldEnough(int age);
 
-#endif // DATA_STRUCTURE_SCRATCHES_SRC_TRY_CATCH_H
+#endif  // DATA_STRUCTURE_SCRATCHES_SRC_TRY_CATCH_H

@@ -7,4 +7,4 @@
 
 void switchExample(char grade);
 
-#endif // DATA_STRUCTURE_DECISION_MAKING_H
+#endif  // DATA_STRUCTURE_DECISION_MAKING_H

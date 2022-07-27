@@ -3,4 +3,4 @@
 
 void hello();
 
-#endif // DATA_STRUCTURE_HELLO_H
+#endif  // DATA_STRUCTURE_HELLO_H

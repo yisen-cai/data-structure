@@ -4,18 +4,17 @@
 #include "Shape.h"
 #include "gtest/gtest.h"
 
-TEST(TestVirtualFunction, virtualFunction)
-{
-    Shape *shape;
-    Rectangle rec(2, 3);
-    Triangle tri(2, 3);
-    shape = &rec;
+TEST(TestVirtualFunction, virtualFunction) {
+  Shape *shape;
+  Rectangle rec(2, 3);
+  Triangle tri(2, 3);
+  shape = &rec;
 
-    // should invoke Rectangle instance area()
-    shape->area();
+  // should invoke Rectangle instance area()
+  shape->area();
 
-    shape = &tri;
+  shape = &tri;
 
-    // should invoke Triangle instance area()
-    shape->area();
+  // should invoke Triangle instance area()
+  shape->area();
 }

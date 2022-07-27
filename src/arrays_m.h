@@ -112,4 +112,4 @@ void reverse(int *arr, int left, int right);
 
 void reverseArray(int *arr, int start, int end);
 
-#endif // DATA_STRUCTURE_ARRAYS_M_H
+#endif  // DATA_STRUCTURE_ARRAYS_M_H

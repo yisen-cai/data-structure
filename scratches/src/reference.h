@@ -27,4 +27,4 @@ int sum(int a, int b = 20);
 
 double &setValues(int i);
 
-#endif // DATA_STRUCTURE_REFERENCE_H
+#endif  // DATA_STRUCTURE_REFERENCE_H

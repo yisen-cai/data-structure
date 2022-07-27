@@ -1,15 +1,15 @@
 #ifndef STACK_H
 #define STACK_H
-#include "binary_tree.h"
 #include <stdbool.h>
+
+#include "binary_tree.h"
 
 #define VALUE_TYPE BNode *
 
-typedef struct Stack
-{
-    VALUE_TYPE *values;
-    int top;
-    int size;
+typedef struct Stack {
+  VALUE_TYPE *values;
+  int top;
+  int size;
 } Stack;
 
 Stack *init_stack(int size);

@@ -10,12 +10,6 @@ double Account::interestRate = initRate();
 
 constexpr int Account::period;
 
-void Account::rate(double rate)
-{
-    interestRate = rate;
-}
+void Account::rate(double rate) { interestRate = rate; }
 
-double Account::initRate()
-{
-    return 0;
-}
+double Account::initRate() { return 0; }

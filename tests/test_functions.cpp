@@ -1,8 +1,4 @@
-#include "gtest/gtest.h"
 #include "functions.h"
+#include "gtest/gtest.h"
 
-
-TEST(TestFunctions, returns)
-{
-    ASSERT_TRUE(true);
-}
+TEST(TestFunctions, returns) { ASSERT_TRUE(true); }

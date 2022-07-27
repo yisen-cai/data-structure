@@ -1,18 +1,16 @@
 #ifndef E3CEE3FC_8B28_4942_A6A1_458F045C257E
 #define E3CEE3FC_8B28_4942_A6A1_458F045C257E
 
-typedef struct BNode
-{
-    struct BNode *lchild;
-    struct BNode *rchild;
-    int data;
+typedef struct BNode {
+  struct BNode *lchild;
+  struct BNode *rchild;
+  int data;
 } BTree;
 
-typedef struct ThreadNode
-{
-    struct ThreadNode *lchild, *rchild;
-    int data;
-    int ltag, rtag;
+typedef struct ThreadNode {
+  struct ThreadNode *lchild, *rchild;
+  int data;
+  int ltag, rtag;
 } ThreadNode;
 
 void pre_order_access_recursively(BNode *base);

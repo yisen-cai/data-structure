@@ -7,4 +7,4 @@
 
 void readAndWriteFile();
 
-#endif // DATA_STRUCTURE_FILE_STREAMS_H
+#endif  // DATA_STRUCTURE_FILE_STREAMS_H

@@ -10,4 +10,4 @@ int lengthOfLongestSubstring(std::string s);
 
 bool isContainsDuplicateCharacter(std::string s, int start, int end);
 
-#endif // DATA_STRUCTURE_LEETCODE_SRC_LONGEST_SUBSTRING_H
+#endif  // DATA_STRUCTURE_LEETCODE_SRC_LONGEST_SUBSTRING_H

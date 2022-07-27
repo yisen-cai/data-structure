@@ -3,29 +3,19 @@
 //
 #include "gtest/gtest.h"
 
-class MyTestFixture : public ::testing::Test
-{
-  public:
-  protected:
-    void SetUp()
-    {
-    }
-    MyTestFixture()
-    {
-    }
+class MyTestFixture : public ::testing::Test {
+ public:
+ protected:
+  void SetUp() {}
+  MyTestFixture() {}
 
-    void TearDown()
-    {
-    }
+  void TearDown() {}
 
-  public:
-    ~MyTestFixture()
-    {
-    }
+ public:
+  ~MyTestFixture() {}
 };
 
-TEST_F(MyTestFixture, TestName)
-{
-    //    a TEST() macro should be replaced with TEST_F() to allow the
-    //    test to access the fixture's members and functions
+TEST_F(MyTestFixture, TestName) {
+  //    a TEST() macro should be replaced with TEST_F() to allow the
+  //    test to access the fixture's members and functions
 }

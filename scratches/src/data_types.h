@@ -11,13 +11,8 @@ void dataSize();
 
 // enum enum-name { list of names} var-list;
 
-enum color
-{
-    red,
-    green,
-    blue
-} c;
+enum color { red, green, blue } c;
 
 void func();
 
-#endif // DATA_STRUCTURE_DATA_TYPES_H
+#endif  // DATA_STRUCTURE_DATA_TYPES_H

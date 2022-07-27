@@ -8,3 +8,5 @@ dynamic/
 .DS_Store
 .vs/
 debug.log
+
+cmake-build*/

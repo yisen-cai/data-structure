@@ -8,8 +8,10 @@
 
 double findMedianSortedArrays(std::vector<int> &nums1, std::vector<int> &nums2);
 
-double findMedianSortedArrays2(std::vector<int> &nums1, std::vector<int> &nums2);
+double findMedianSortedArrays2(std::vector<int> &nums1,
+                               std::vector<int> &nums2);
 
-double move_to_next(std::vector<int> &nums1, std::vector<int> &nums2, int &i1, int &i2);
+double move_to_next(std::vector<int> &nums1, std::vector<int> &nums2, int &i1,
+                    int &i2);
 
-#endif // DATA_STRUCTURE_LEETCODE_SRC_MEDIAN_VALUE_H
+#endif  // DATA_STRUCTURE_LEETCODE_SRC_MEDIAN_VALUE_H

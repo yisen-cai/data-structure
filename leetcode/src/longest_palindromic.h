@@ -9,4 +9,4 @@
 
 std::string longestPalindrome(std::string s);
 
-#endif // DATA_STRUCTURE_LEETCODE_SRC_LONGEST_PALINDROMIC_H
+#endif  // DATA_STRUCTURE_LEETCODE_SRC_LONGEST_PALINDROMIC_H
